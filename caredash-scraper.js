@@ -26,9 +26,11 @@ async function scrapeReviews(url){
     // txt3 = txt3.textContent.replace(/(\r\n\t|\n|\r|\t)/gm, "");
         
     const survey_numbers =  await txt3.jsonValue();
+
+    survey_cetegory = 'Overall';
     
 
-    console.log({title, ratings, survey_numbers, imageLink});
+    console.log({title, survey_cetegory, ratings, survey_numbers, imageLink});
 
     browser.close();
 
